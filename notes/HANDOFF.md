@@ -27,6 +27,7 @@ glossy wet sheen. Nick's open notes: ends should curl more, darker/contrasty vs 
 vs her broad soft sheen, bun is a smooth ball (hers a twisted knot). Back middle "too thick" = shape (flare), not density.
 
 ## Rules learned
+- Read the Blender manual page before using a tool: `bman "words"` on the box (offline, all pages). Findings: notes/blender-manual-hair.md.
 - Every setting that works goes into a script before the turn ends (a dead pod loses live-only changes).
 - Never end a turn with the pod up unless Nick knows it is billing.
 - Show both options with pictures when there are two ways (Nick: "if you can do something better and fast, tell me").

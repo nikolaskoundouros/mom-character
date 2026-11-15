@@ -36,9 +36,19 @@ the reader tools miss the text because ~100k characters of menu come first (use 
    colliders.
 5. Render: Cycles Curves `Shape: 3D Curves` "for accurate results when viewing curves close up".
 
+## Offline manual on the box
+`bman "words"` searches all 2,453 pages of the official 5.3 manual package (~/Documents/blender-manual, plain text in
+text/, 0.25 s); `bman -p <path>` prints one page with its online link. Read the page before using any tool or node.
+
+## Found with it: Roll Hair Curves (her ends)
+"coils or curls the tips of hair curves, rolling them inward or outward". Inputs: Roll Length (portion from the tip),
+Roll Radius, Roll Depth, Roll Taper, Subdivision (smoothness), Variation Level, Random Orientation, Retain Overall Shape,
+Preserve Length. This is the purpose-built node for her soft curled-under ends, instead of our TurnUnder offsets.
+(modeling/geometry_nodes/hair/deformation/roll_hair_curves.html)
+
 ## Changes this suggests for her (not tried yet)
 
 - Rebuild the groom as guides + Interpolate Hair Curves (Poisson Disk), groomed by mouse with collision on.
-- One guide map; Curl with Subdivision 4+ on the lower ends.
+- Ends: Roll Hair Curves (Retain Overall Shape on, Subdivision 4+) instead of the hand-made TurnUnder; or one guide map + Curl with Subdivision 4+.
 - Huang model, Aspect Ratio ~0.75, roughness up from 0.09, Coat back to 0.
 - Drape with geometry-nodes Hair Dynamics against a closed body collider (not the shirt).
