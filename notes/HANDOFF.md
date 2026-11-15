@@ -4,6 +4,9 @@ Goal: the mom from "My Mom Cracked The Dinosaur" (reference: ~/Desktop/My Mom Cr
 head crops in refs/heads, haircut analysis refs/mom_haircut_analysis.jpg, hair flow refs/flow_traced.jpg) as a 3D character
 that matches the reference. Current focus: her hair (half-up bun, curtain bangs, lower half to the collar, honey, glossy).
 
+## HOLD (Nick, 15 Nov): no pod jobs until the hair research is done.
+Do not run live/pod_live.sh or rent a pod until Nick says the research is finished.
+
 ## Run it (everything from the box; the Mac can be closed)
 1. `live/pod_live.sh` rents a pod (ask Nick first: ~$0.89/h RTX 4090), copies blender-funnel + this project,
    starts live Blender (GPU-drawn via VirtualGL), tunnels 127.0.0.1:9876 on the box to it. The blender MCP connector
