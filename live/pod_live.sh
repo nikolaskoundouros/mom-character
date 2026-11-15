@@ -19,7 +19,10 @@ tunnel() {
 }
 [ "${1:-}" = tunnel ] && { tunnel; exit; }
 
-"$WB" status | grep -q "WB up" || "$WB" up || exit 1
+# a pod the guard already stopped still reads "up" in workbench.json: check it answers
+if ! { "$WB" status | grep -q "WB up" && timeout 60 "$WB" run true >/dev/null 2>&1; }; then
+  "$WB" down >/dev/null 2>&1; "$WB" up || exit 1
+fi
 "$WB" push "$HOME/Desktop/blender-funnel" >/dev/null && "$WB" push "$P" >/dev/null && echo "projects copied to the pod"
 "$WB" run '
   command -v xvfb-run >/dev/null && command -v xdotool >/dev/null || (apt-get update -qq && DEBIAN_FRONTEND=noninteractive \
@@ -28,8 +31,8 @@ tunnel() {
     && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq ./virtualgl_3.1.5_amd64.deb >/dev/null 2>&1)
   mkdir -p /root/live_snaps; touch /root/.wb_last_use
   if ss -ltn | grep -q 9876; then echo "live Blender already running"; else
-    cd '"$P"'/live && nohup setsid xvfb-run --auto-servernum -s "-screen 0 1920x1080x24 +extension GLX" \
-      /opt/VirtualGL/bin/vglrun -d egl $BLENDER --python start_live.py > /root/live_gui.log 2>&1 < /dev/null &
+    # setsid -f + every fd closed: the ssh session must not wait on Blender (it hung for 10 min on 15 Nov)
+    setsid -f bash -c "exec </dev/null >/root/live_gui.log 2>&1; cd '"$P"'/live; exec xvfb-run --auto-servernum -s \\"-screen 0 1920x1080x24 +extension GLX\\" /opt/VirtualGL/bin/vglrun -d egl $BLENDER --python start_live.py"
     for i in $(seq 1 30); do ss -ltn | grep -q 9876 && break; sleep 2; done
     ss -ltn | grep -q 9876 && echo "live Blender up (GPU-drawn, MCP on 9876)" || { echo "live Blender did not start"; tail -20 /root/live_gui.log; exit 1; }
   fi'
