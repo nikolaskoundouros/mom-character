@@ -32,7 +32,7 @@ fi
   mkdir -p /root/live_snaps; touch /root/.wb_last_use
   if ss -ltn | grep -q 9876; then echo "live Blender already running"; else
     # setsid -f + every fd closed: the ssh session must not wait on Blender (it hung for 10 min on 15 Nov)
-    setsid -f bash -c "exec </dev/null >/root/live_gui.log 2>&1; cd '"$P"'/live; exec xvfb-run --auto-servernum -s \\"-screen 0 1920x1080x24 +extension GLX\\" /opt/VirtualGL/bin/vglrun -d egl $BLENDER --python start_live.py"
+    BLENDER=$BLENDER setsid -f '"$P"'/live/launch_blender.sh
     for i in $(seq 1 30); do ss -ltn | grep -q 9876 && break; sleep 2; done
     ss -ltn | grep -q 9876 && echo "live Blender up (GPU-drawn, MCP on 9876)" || { echo "live Blender did not start"; tail -20 /root/live_gui.log; exit 1; }
   fi'
