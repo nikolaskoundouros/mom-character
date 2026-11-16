@@ -1,0 +1,3 @@
+projects copied to the pod
+live Blender up (GPU-drawn, MCP on 9876)
+tunnel: box 127.0.0.1:9876 -> pod Blender

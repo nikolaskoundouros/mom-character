@@ -1,4 +1,4 @@
-# HANDOFF for the next agent: mom-character (written 16 Nov 2026, about 10:00 UTC)
+# HANDOFF for the next agent: mom-character (written 16 Nov 2026, updated 09:33 UTC)
 
 This replaces the 15 Nov version (still in git at `774c3bb`).
 
@@ -69,16 +69,23 @@ Treat [ran per ...] as a recipe to confirm on first use, not as fact.
 
 ## Where everything lives [checked 16 Nov]
 
-| What | Path | Machines | Git |
+**The work is on GitHub, public, under github.com/nikolaskoundouros** (pushed 16 Nov from the Mac).
+- **On the Mac only:** `work/` (the two chat temp folders) and `refs/source/` (the reference clip) are committed but not pushed. The clip is someone else's video, and the repo is public.
+- **Hub:** `3d-system` holds the README, every 3D handoff, 20 Blender chats, the 3D skills and memory, and `setup.sh`, which puts each repo at its path.
+- **The box is behind:** its copies have not pulled these commits, and it has no GitHub login.
+
+| What | Path | Machines | Repo |
 |---|---|---|---|
-| This project (hair scripts, cameras, outlines, cursor harness) | `~/Desktop/mom-character` | Mac and box | Local only, no remote. Last commit `774c3bb` (15 Nov 10:53 +02:00). 36 uncommitted entries on the Mac, 120 on the box. |
-| Pods (`workbench`, pod guard) | `~/Desktop/render-desk` | box (real), Mac (copy) | Two histories: the box has commits up to 28 Sep plus 12 uncommitted; the Mac copy has no commits. |
-| Character and scene pipeline | `~/Desktop/blender-funnel` on the box, `~/Projects/blender-funnel` on the Mac | both | GitHub `nikolaskoundouros/blender-funnel` (private), last pushed 14 Nov 13:34 UTC. Uncommitted changes since: 5 on the box, 10 on the Mac. |
-| Clip analyzer (OpenCV motion, faces, sound, captions, COLMAP tools) | `~/Projects/clip-analyzer`, page on port 8570 | Mac only | Local only. 1 commit, 19 uncommitted. |
-| PlotPointe Animate page | `~/Projects/plotpointe-animate`, port 8575 | Mac | Local only. |
-| Skills | `~/.claude/skills/` (`blender`, `blender-hair`, `live-blender`, `clip-analyzer`, `camera-moves`, `learning-loop`) | Mac. The box lacks `blender` and `blender-hair`. | Not in git. |
-| Memory | `/Users/nick/.claude/projects/-Users-nick/memory/` | Mac; the box has a partial copy | Not in git. |
-| Older hair handoff | `~/AgencyOS/handoffs/2026-11-15-mom-hair.md` | Mac | Superseded by this file. Its cursor numbers and cap note are out of date. |
+| This project (hair scripts, cameras, outlines, cursor harness, blends, `work/` temp folders, reference clip) | `~/Desktop/mom-character` | Mac (current), box (older) | `mom-character` |
+| Pods (`workbench`, pod guard) | `~/Desktop/render-desk` | box and Mac (same history) | `render-desk` |
+| Character and scene pipeline | `~/Desktop/blender-funnel` on the box, `~/Projects/blender-funnel` on the Mac | both (box older) | `blender-funnel` |
+| Clip analyzer (OpenCV motion, faces, sound, captions, COLMAP tools) | `~/Projects/clip-analyzer`, page on port 8570 | Mac only | `clip-analyzer` |
+| PlotPointe Animate page | `~/Projects/plotpointe-animate`, port 8575 | Mac | `plotpointe-animate` |
+| Skills (`blender`, `blender-hair`, `live-blender`, `clip-analyzer`, `camera-moves`, `learning-loop`, `zack-clip`) | `~/.claude/skills/` | Mac. The box lacks `blender` and `blender-hair`. | `3d-system/skills` |
+| Memory | `/Users/nick/.claude/projects/-Users-nick/memory/` | Mac; the box has a partial copy | `3d-system/memory` |
+| Chats, older handoffs | none | none | `3d-system/conversations`, `3d-system/handoffs` |
+
+**Never in git:** the RunPod key, ssh keys and the Blender connector config. They stay on the box.
 
 ## How to run each piece
 

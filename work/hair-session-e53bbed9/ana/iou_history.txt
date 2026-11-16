@@ -1,0 +1,12 @@
+00:00:00	0.597	start: hair hangs from skull, face strip
+00:00:01	0.725	pieces removed, sweep back, dome volume down
+00:00:02	0.735	gap -0.02
+00:00:03	0.752	puff-then-fall, blend + smooth (manual Blend/Smooth Hair Curves)
+15:04:00	0.752	baseline now
+15:04:41	0.776	bangs to cheekbone, temple roots lower, longer back, nape tuck
+15:10:40	0.776	back tuck -0.035
+15:11:03	0.774	back tuck -0.05, gap -0.03
+15:11:45	0.776	FINAL defaults: gap -0.02, back tuck -0.035, zend +0.035
+00:00:09	0.000	--- NEW TARGET: accurate outline (outline_auto), scores below are not comparable with the polygon scores above ---
+15:19:07	0.776	outline target: current model
+15:19:54	0.805	outline target: current model

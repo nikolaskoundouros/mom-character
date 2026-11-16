@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hair progress</title>
+<style>body{margin:0;background:#111;color:#ddd;font:14px system-ui}header{padding:8px 12px;border-bottom:1px solid #333}img{width:100%;display:block}</style></head>
+<body><header><b>Mom hair: live progress</b> <span id="t" style="opacity:.7">loading</span></header><img id="i" src="latest.jpg">
+<script>let last="";async function tick(){try{const r=await fetch("latest.jpg",{method:"HEAD",cache:"no-store"});const m=r.headers.get("last-modified")||"";
+if(m&&m!==last){last=m;document.getElementById("i").src="latest.jpg?"+Date.now();document.getElementById("t").textContent="updated "+new Date().toLocaleTimeString()}}catch(e){}setTimeout(tick,1500)}tick();</script></body></html>

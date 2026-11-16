@@ -1,0 +1,6 @@
+## Hair Read Nodes
+- Attachment Info
+- Curve Info
+- Curve Root
+- Curve Segment
+- Curve Tip

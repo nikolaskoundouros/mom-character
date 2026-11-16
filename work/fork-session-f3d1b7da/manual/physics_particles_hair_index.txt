@@ -1,0 +1,17 @@
+## Hair¶
+This page is about the end of life hair system.
+Read about the new hair system on the Hair Nodes page.
+- Introduction
+- Growing
+- Styling
+- Animating
+- Rendering
+- Emission
+- Hair Dynamics
+- Collisions
+- Structure
+- Volume
+- Render
+- Shape
+- Children
+- Viewport Display

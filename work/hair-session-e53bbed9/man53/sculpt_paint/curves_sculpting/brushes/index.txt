@@ -1,0 +1,14 @@
+## Brushes
+Brushes for Curves Sculpt Mode bundled in the Essentials library.
+- Selection Paint
+- Add Curves
+- Delete Curves
+- Cut Curves
+- Density Brush
+- Comb Curves
+- Snake Hook Curves
+- Grow / Shrink Curves
+- Pinch Curves
+- Puff Curves
+- Smooth Curves
+- Slide Curves

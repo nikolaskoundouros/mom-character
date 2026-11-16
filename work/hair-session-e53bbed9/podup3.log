@@ -1,0 +1,31 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+RD_SETUP downloading Blender 5.2.2
+Blender 5.2.2 LTS
+RD_SETUP blender_can_encode: no
+NVIDIA GeForce RTX 4090, 24564 MiB
+RD_SETUP ready
+RD_POD NVIDIA GeForce RTX 4090 unavailable, trying the next one
+RD_POD NVIDIA GeForce RTX 5090 unavailable, trying the next one
+RD_POD NVIDIA L40S unavailable, trying the next one
+RD_POD NVIDIA A40 unavailable, trying the next one
+RD_POD NVIDIA RTX A5000 unavailable, trying the next one
+RD_POD NVIDIA RTX 4000 Ada Generation unavailable, trying the next one
+RD_POD NVIDIA RTX A4500 unavailable, trying the next one
+RD_POD NVIDIA RTX A6000 unavailable, trying the next one
+RD_POD NVIDIA RTX A4000 unavailable, trying the next one
+RD_POD NVIDIA L4 unavailable, trying the next one
+RD_POD nothing free where the volume lives, trying other data centres
+RD_POD mapjr8ggbd7ssg NVIDIA GeForce RTX 4090 $0.89/hr (no volume: this data centre was empty)
+RD_POD status RUNNING
+WB up: pod mapjr8ggbd7ssg NVIDIA GeForce RTX 4090 $0.89/hr; idle stop 10 min, hard stop 5 h
+projects copied to the pod
+live Blender up (GPU-drawn, MCP on 9876)
+tunnel: box 127.0.0.1:9876 -> pod Blender
+exit 0

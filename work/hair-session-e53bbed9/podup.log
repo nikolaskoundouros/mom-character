@@ -1,0 +1,19 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+Blender 5.2.2 LTS
+RD_SETUP blender_can_encode: no
+NVIDIA GeForce RTX 4090, 24564 MiB
+RD_SETUP ready
+RD_POD bwasukibpdbl3z NVIDIA GeForce RTX 4090 $0.89/hr
+RD_POD status RUNNING
+WB up: pod bwasukibpdbl3z NVIDIA GeForce RTX 4090 $0.89/hr; idle stop 10 min, hard stop 5 h
+projects copied to the pod
+live Blender up (GPU-drawn, MCP on 9876)
+tunnel: box 127.0.0.1:9876 -> pod Blender
+exit 0

@@ -1,0 +1,10 @@
+## Common Settings
+Information on brush settings for every mode can be found in these pages:
+## Brush
+See general and advanced Brush here.
+## Stroke
+See the global brush settings for Stroke settings.
+## Falloff
+See the global brush settings for Falloff settings.
+## Cursor
+See the global brush settings for Cursor settings.

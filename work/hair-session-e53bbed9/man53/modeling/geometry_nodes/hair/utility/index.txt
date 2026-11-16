@@ -1,0 +1,4 @@
+## Hair Utility Nodes
+- Attach Hair Curves to Surface
+- Redistribute Curve Points
+- Restore Curve Segment Length

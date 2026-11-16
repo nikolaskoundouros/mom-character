@@ -1,0 +1,56 @@
+WEBVTT
+
+00:00.000 --> 00:02.500
+Quick hair creation and animation in Blender.
+
+00:02.500 --> 00:08.000
+Take a UV sphere, right-click, shade smooth, go to material properties, add two materials.
+
+00:08.000 --> 00:11.000
+One for the sphere, one for the hair.
+
+00:11.000 --> 00:15.000
+Set the hair material to Principled Hair BSDF.
+
+00:15.000 --> 00:17.000
+Go to weight paint mode.
+
+00:17.000 --> 00:19.000
+Paint the area you want hair to grow.
+
+00:19.000 --> 00:21.000
+Rename the vertex group if you want.
+
+00:21.000 --> 00:22.000
+Add a particle system.
+
+00:22.000 --> 00:24.000
+Switch from Emitter to Hair.
+
+00:24.000 --> 00:28.000
+Select the hair material and set Vertex Groups to Hair Group.
+
+00:28.000 --> 00:29.000
+Adjust hair length.
+
+00:29.000 --> 00:31.000
+Comb particles in Edit Mode.
+
+00:31.000 --> 00:34.000
+Then return to Object Mode when satisfied.
+
+00:34.000 --> 00:37.000
+In Particle System, enable Children.
+
+00:37.000 --> 00:40.000
+Set to Interpolated and set values to 200.
+
+00:40.000 --> 00:47.000
+In Render Properties, set the render engine to Cycles and turn on Hair Dynamics for automatic animation.
+
+00:47.000 --> 00:49.000
+Set pin goal strength to 0.460.
+
+00:49.000 --> 00:52.000
+Subscribe for more Blender tips on Filmtouche.
+

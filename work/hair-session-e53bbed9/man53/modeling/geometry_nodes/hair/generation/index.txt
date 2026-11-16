@@ -1,0 +1,4 @@
+## Hair Generation Nodes
+- Duplicate Hair Curves
+- Generate Hair Curves
+- Interpolate Hair Curves

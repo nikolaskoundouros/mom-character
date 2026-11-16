@@ -1,0 +1,34 @@
+## Hair Nodes
+Nodes focused on generating or editing curves, typically used for hair.
+- Deformation
+- Blend Hair Curves
+- Displace Hair Curves
+- Frizz Hair Curves
+- Hair Curves Noise
+- Roll Hair Curves
+- Rotate Hair Curves
+- Shrinkwrap Hair Curves
+- Smooth Hair Curves
+- Straighten Hair Curves
+- Trim Hair Curves
+- Generation
+- Duplicate Hair Curves
+- Generate Hair Curves
+- Interpolate Hair Curves
+- Guides
+- Braid Hair Curves
+- Clump Hair Curves
+- Create Guide Index Map
+- Curl Hair Curves
+- Read
+- Attachment Info
+- Curve Info
+- Curve Root
+- Curve Segment
+- Curve Tip
+- Utility
+- Attach Hair Curves to Surface
+- Redistribute Curve Points
+- Restore Curve Segment Length
+- Write
+- Set Hair Curve Profile
